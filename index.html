@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════
+       CUSTOM CURSOR
+  ══════════════════════════════ -->
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- ══════════════════════════════
+       NAVIGATION
+  ══════════════════════════════ -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">YN.</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-menu-btn" id="menuBtn" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#experience" class="mobile-link">Experience</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ══════════════════════════════
+       HERO
+  ══════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">Available for work · Based in Your City</p>
+      <h1 class="hero-title">Your<br><span>Name</span></h1>
+      <p class="hero-sub">
+        Software engineer crafting digital experiences that live at the
+        intersection of technology and design.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       ABOUT
+  ══════════════════════════════ -->
+  <section id="about">
+    <p class="section-label reveal">Who I Am</p>
+    <h2 class="section-title reveal reveal-delay-1">About</h2>
+
+    <div class="about-grid">
+
+      <!-- Left: Photo + Text -->
+      <div class="about-left">
+        <!-- ▼ REPLACE src WITH YOUR PHOTO PATH e.g. "images/photo.jpg" -->
+        <div class="about-photo-wrap reveal">
+          <div class="photo-frame">
+            <img
+              src="images/profile.jpg"
+              alt="Your Name"
+              class="about-photo"
+              onerror="this.parentElement.classList.add('photo-placeholder')"
+            />
+            <div class="photo-placeholder-text">Your Photo Here</div>
+          </div>
+          <div class="photo-badge">
+            <span class="badge-dot"></span>
+            Open to Work
+          </div>
+        </div>
+
+        <div class="about-text reveal reveal-delay-1">
+          <p>I'm a <strong>passionate developer</strong> with X years of experience
+          building things for the web. I specialize in creating clean, efficient,
+          and meaningful digital experiences.</p>
+          <p>My background spans full-stack development, with a particular interest
+          in <strong>performance, design systems, and developer tooling</strong>. I love
+          turning complex problems into simple, beautiful interfaces.</p>
+          <p>When I'm not coding, you'll find me exploring the mountains, reading
+          about tech, or contributing to open source.</p>
+        </div>
+      </div>
+
+      <!-- Right: Stats + Details -->
+      <div class="about-right">
+        <div class="about-stats reveal reveal-delay-2">
+          <div class="stat-card">
+            <div class="stat-number" data-target="12">0</div>
+            <div class="stat-suffix">+</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="3">0</div>
+            <div class="stat-suffix">+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="5">0</div>
+            <div class="stat-suffix"></div>
+            <div class="stat-label">Certifications</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">∞</div>
+            <div class="stat-suffix"></div>
+            <div class="stat-label">Cups of Coffee</div>
+          </div>
+        </div>
+
+        <div class="about-details reveal reveal-delay-3">
+          <div class="detail-row"><span class="detail-key">Name</span><span class="detail-val">Your Full Name</span></div>
+          <div class="detail-row"><span class="detail-key">Role</span><span class="detail-val">Software Engineer</span></div>
+          <div class="detail-row"><span class="detail-key">Location</span><span class="detail-val">Your City, Country</span></div>
+          <div class="detail-row"><span class="detail-key">Email</span><span class="detail-val">you@email.com</span></div>
+          <div class="detail-row"><span class="detail-key">Frontend</span><span class="detail-val">React, Next.js, TypeScript</span></div>
+          <div class="detail-row"><span class="detail-key">Backend</span><span class="detail-val">Node.js, Python, SQL</span></div>
+          <div class="detail-row"><span class="detail-key">Cloud</span><span class="detail-val">AWS, GCP, Azure</span></div>
+          <div class="detail-row"><span class="detail-key">Availability</span><span class="detail-val available">● Open to Opportunities</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       SKILLS
+  ══════════════════════════════ -->
+  <section id="skills">
+    <div class="skills-inner">
+      <p class="section-label reveal">What I Know</p>
+      <h2 class="section-title reveal reveal-delay-1">Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-card reveal reveal-delay-1">
+          <div class="skill-icon">⚛️</div>
+          <div class="skill-name">Frontend Development</div>
+          <div class="skill-desc">React, Next.js, TypeScript — building fast, accessible interfaces with a sharp eye for design detail.</div>
+          <div class="skill-bar-wrap"><div class="skill-bar" data-width="92"></div></div>
+        </div>
+
+        <div class="skill-card reveal reveal-delay-2">
+          <div class="skill-icon">🖥️</div>
+          <div class="skill-name">Backend & APIs</div>
+          <div class="skill-desc">Node.js, Python, REST & GraphQL — designing scalable systems that power products at any scale.</div>
+          <div class="skill-bar-wrap"><div class="skill-bar" data-width="85"></div></div>
+        </div>
+
+        <div class="skill-card reveal reveal-delay-3">
+          <div class="skill-icon">☁️</div>
+          <div class="skill-name">Cloud & DevOps</div>
+          <div class="skill-desc">AWS, GCP, Docker, CI/CD — deploying and operating infrastructure with confidence and efficiency.</div>
+          <div class="skill-bar-wrap"><div class="skill-bar" data-width="78"></div></div>
+        </div>
+
+        <div class="skill-card reveal reveal-delay-1">
+          <div class="skill-icon">🗄️</div>
+          <div class="skill-name">Data Engineering</div>
+          <div class="skill-desc">SQL, ETL pipelines, data warehousing — transforming raw data into actionable insights.</div>
+          <div class="skill-bar-wrap"><div class="skill-bar" data-width="88"></div></div>
+        </div>
+
+        <div class="skill-card reveal reveal-delay-2">
+          <div class="skill-icon">🤖</div>
+          <div class="skill-name">Machine Learning</div>
+          <div class="skill-desc">Scikit-learn, PyTorch, LLMs — building models that learn, predict, and generate intelligently.</div>
+          <div class="skill-bar-wrap"><div class="skill-bar" data-width="75"></div></div>
+        </div>
+
+        <div class="skill-card reveal reveal-delay-3">
+          <div class="skill-icon">🎨</div>
+          <div class="skill-name">UI/UX Design</div>
+          <div class="skill-desc">Figma, design systems, motion design — bridging the gap between code and beautiful experiences.</div>
+          <div class="skill-bar-wrap"><div class="skill-bar" data-width="70"></div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       PROJECTS
+  ══════════════════════════════ -->
+  <section id="projects">
+    <p class="section-label reveal">What I've Built</p>
+    <h2 class="section-title reveal reveal-delay-1">Projects</h2>
+    <div class="projects-grid">
+
+      <a href="https://github.com/yourusername/project-1" class="project-card reveal reveal-delay-1" target="_blank" rel="noopener">
+        <div class="project-num">01</div>
+        <div class="project-title">AI-Powered Analytics Dashboard</div>
+        <div class="project-desc">A real-time dashboard leveraging machine learning to surface insights from large datasets. Built with React, Python, and deployed on AWS with CI/CD pipelines.</div>
+        <div class="project-tags">
+          <span class="tag">React</span><span class="tag">Python</span><span class="tag">AWS</span><span class="tag">ML</span>
+        </div>
+        <div class="project-arrow">→</div>
+      </a>
+
+      <a href="https://github.com/yourusername/project-2" class="project-card reveal reveal-delay-2" target="_blank" rel="noopener">
+        <div class="project-num">02</div>
+        <div class="project-title">Multi-Cloud Data Pipeline</div>
+        <div class="project-desc">End-to-end ETL pipeline processing millions of records daily across AWS and GCP. Features Bronze-Silver-Gold architecture with real-time alerting and monitoring.</div>
+        <div class="project-tags">
+          <span class="tag">GCP</span><span class="tag">AWS</span><span class="tag">PySpark</span><span class="tag">SQL</span>
+        </div>
+        <div class="project-arrow">→</div>
+      </a>
+
+      <a href="https://github.com/yourusername/project-3" class="project-card reveal reveal-delay-3" target="_blank" rel="noopener">
+        <div class="project-num">03</div>
+        <div class="project-title">Serverless Chatbot Platform</div>
+        <div class="project-desc">Conversational AI assistant using NLP and RAG architecture, serving 300+ weekly users. Built with LangChain, FastAPI, and a full CI/CD setup.</div>
+        <div class="project-tags">
+          <span class="tag">LangChain</span><span class="tag">FastAPI</span><span class="tag">NLP</span><span class="tag">LLM</span>
+        </div>
+        <div class="project-arrow">→</div>
+      </a>
+
+      <a href="https://github.com/yourusername" class="project-card reveal reveal-delay-4" target="_blank" rel="noopener">
+        <div class="project-num">04</div>
+        <div class="project-title">Open Source Contributions</div>
+        <div class="project-desc">Active contributor to various open source projects. Check GitHub for a full history of contributions, tools, and experiments across different domains.</div>
+        <div class="project-tags">
+          <span class="tag">Open Source</span><span class="tag">Community</span><span class="tag">Misc</span>
+        </div>
+        <div class="project-arrow">→</div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       EXPERIENCE
+  ══════════════════════════════ -->
+  <section id="experience">
+    <div class="exp-inner">
+      <p class="section-label reveal">Where I've Been</p>
+      <h2 class="section-title reveal reveal-delay-1">Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal reveal-delay-1">
+          <div class="timeline-date">Jan 2024 – Present</div>
+          <div class="timeline-role">Senior Software Engineer</div>
+          <div class="timeline-company">Your Current Company</div>
+          <div class="timeline-details">Leading development of core platform features used by thousands of customers. Architected scalable microservices and mentored junior engineers on best practices.</div>
+        </div>
+
+        <div class="timeline-item reveal reveal-delay-2">
+          <div class="timeline-date">Jun 2022 – Dec 2023</div>
+          <div class="timeline-role">Software Engineer</div>
+          <div class="timeline-company">Previous Company</div>
+          <div class="timeline-details">Built and maintained data pipelines processing TB-scale datasets. Improved query performance by 40% and introduced automated testing practices to the team.</div>
+        </div>
+
+        <div class="timeline-item reveal reveal-delay-3">
+          <div class="timeline-date">May 2021 – May 2022</div>
+          <div class="timeline-role">Junior Developer / Intern</div>
+          <div class="timeline-company">Another Company</div>
+          <div class="timeline-details">Developed frontend features in React, collaborated with design and product teams, and improved the onboarding experience reducing churn by 15%.</div>
+        </div>
+
+        <div class="timeline-item reveal reveal-delay-4">
+          <div class="timeline-date">2019 – 2023</div>
+          <div class="timeline-role">BSc Computer Science</div>
+          <div class="timeline-company">Your University</div>
+          <div class="timeline-details">Graduated with honours. Led the tech club, participated in hackathons, and completed a thesis on distributed systems and fault tolerance in cloud environments.</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       CONTACT
+  ══════════════════════════════ -->
+  <section id="contact">
+    <p class="section-label reveal">Say Hello</p>
+    <h2 class="contact-tagline reveal reveal-delay-1">Let's build<br>something <span>great.</span></h2>
+    <a href="mailto:you@email.com" class="contact-email reveal reveal-delay-2">you@email.com</a>
+    <div class="contact-links reveal reveal-delay-3">
+      <a href="https://github.com/yourusername" class="contact-link" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/yourprofile" class="contact-link" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="resume.pdf" class="contact-link" download>Download CV</a>
+      <a href="https://twitter.com/yourhandle" class="contact-link" target="_blank" rel="noopener">Twitter</a>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       FOOTER
+  ══════════════════════════════ -->
+  <footer>
+    <span>© <span id="year"></span> Your Name</span>
+    <span>Designed & Built with ♥</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
