@@ -665,7 +665,6 @@ section {
 
 .skill-card:hover {
   border-color: rgba(163, 255, 112, 0.2);
-  transform: translateY(-4px);
 }
 
 .skill-card:hover::before {
